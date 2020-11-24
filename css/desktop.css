@@ -1,0 +1,71 @@
+html{
+    font-size: 20px;
+    padding: 20;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #C4C4C4;
+
+}
+
+nav input{
+    display: none;
+
+}
+@media only screen and (min-width: 1366px){
+    /* aparece label */
+    label{
+        display: block;
+    }
+    /* desaparece ul */
+    ul{
+        display: none;
+        list-style-type: none;
+    }
+}
+
+input:checked + ul{
+    display: block;
+    width: 50vw;
+    height: 50vh;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 10vh;
+    padding: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1366px){
+    /* desaparece el label */
+    label{
+        display: none;
+    }
+    /* aparece ul */
+    ul{
+        display: flex;
+        width: 50vw;
+        justify-content: space-between;
+    }
+
+}
+
+input:checked + ul{
+    display: block;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
